@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <style>
+        .users {
+            background-color: lightskyblue;
+            padding: 15px;
+            margin: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+
+        }
+
+        .heading {
+            font-size: 30px;
+        }
+
+        .user-button {
+            margin: 0px auto;
+            padding: 5px 10px;
+            background-color: lightgreen;
+            border-radius: 5px;
+            font-size: 15px;
+            border: none;
+            text-align: center;
+        }
+        .next, .pre{
+            text-decoration: none;
+        }
+
+        .section-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <section class="section-container">
+            <button class="user-button"><a class="pre" href="todos.html">Previous page</a></button>
+            <button class="user-button" onclick="commentsData()">Show Comments</button>
+            <button class="user-button"><a class="next" href="comments.html">Next pages</a></button>
+            
+            <br>
+            <br>
+            <h3 class="heading">Your all comments is here:</h3>
+        </section>
+        <div id="users-container">
+
+
+        </div>
+    </section>
+
+
+
+    <!-- script -->
+
+    <script src="js/comments.js"></script>
+</body>
+</html>

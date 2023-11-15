@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+    <style>
+        .users {
+            background-color: lightskyblue;
+            padding: 15px;
+            margin: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+
+        }
+        .next, .pre{
+            text-decoration: none;
+        }
+
+        .heading {
+            font-size: 30px;
+        }
+
+        .user-button {
+            margin: 0px auto;
+            padding: 5px 10px;
+            background-color: lightgreen;
+            border-radius: 5px;
+            font-size: 15px;
+            border: none;
+            text-align: center;
+        }
+
+        .section-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <section class="section-container">
+            <button class="user-button"><a class="pre" href="todos.html">Previous pages</a></button>
+            <button class="user-button" onclick="todosData()">Show Todos Data</button>
+            <button class="user-button"><a class="next" href="comments.html">Next pages</a></button>
+            
+            <br>
+            <br>
+            <h3 class="heading">Your all todos data is here:</h3>
+        </section>
+        <div id="users-container">
+
+
+        </div>
+    </section>
+
+
+
+    <!-- script -->
+
+    <script src="js/todos.js"></script>
+</body>
+</html>
